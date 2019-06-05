@@ -10,7 +10,12 @@ class FirstScreen extends StatelessWidget{
         child: RaisedButton(
           child: Text('Go To Second Screen'),
           onPressed: (){
-            //Navigator.push(context, MaterialPageRoute(builder: (context) => _SecondScreen())
+            Navigator.push(
+              contex,
+              MaterialPageRoute(
+                builder: (context) => SecondScreen()
+              )
+            );
           }
         )
       )
