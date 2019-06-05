@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'second_screen.dart';
+import ''
 
 class FirstScreen extends StatelessWidget{
   @override
@@ -22,7 +23,13 @@ class FirstScreen extends StatelessWidget{
             }
           )
         )
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/settings');
+        },
+        child: Icon(Icons.settings)
+      ),
     );
   }
 }

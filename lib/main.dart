@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
         '/settings': (context) => SettingsScreen(),
         '/first' : (context) => FirstScreen(),
         '/second': (context) => SecondScreen()
-      }
-      home: FirstScreen()
+      },
+      home: FirstScreen(),
     );
   }
 }
