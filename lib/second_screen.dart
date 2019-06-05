@@ -10,14 +10,7 @@ class SecondScreen extends StatelessWidget{
         child: RaisedButton(
           child: Text('Go Back'),
           onPressed: (){
-            Navigator.push(
-              context, 
-              MaterialPageRoute(
-                builder: (context) =>{
-                  FirstScreen()
-                }
-              )
-            );
+            Navigator.pop(context);
           },
         )
       )
