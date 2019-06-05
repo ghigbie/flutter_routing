@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'second_screen.dart';
 
-class _FirstScreen extends StatelessWidget{
+class FirstScreen extends StatelessWidget{
   @override
   Widget build(BuildContext contex){
     return Container(
