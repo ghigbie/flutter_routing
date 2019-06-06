@@ -10,14 +10,15 @@ class SettingsScreen extends StatelessWidget{
       body: Container(
         color: Colors.purple[400],
         child: Center(
-        child: RaisedButton(
-          child: Text('Leave Settings Screen'),
-          onPressed: (){
-            Navigator.pop(context);
-          },
+          child: Column(
+            children: [
+              Card(child: Text('Facebook Login')),
+              Card(child: Text('Google Login')),
+              Card(child: Text('Linked Login'))
+            ],
+          ),
+        ),
         )
-      )
-    )
-  );
+      );
   }
 }
