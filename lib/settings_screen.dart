@@ -14,11 +14,15 @@ class SettingsScreen extends StatelessWidget{
             children: [
               Card(child: Text('Facebook Login')),
               Card(child: Text('Google Login')),
-              Card(child: Text('Linked Login'))
-            ],
+              Card(child: Text('Linked Login')),
+              RaisedButton(
+                child: Text('Return to Home Screen'),
+                onPressed: () => Navigator.pop(context)
+              ),
+            ]
+            ),
+            ),
           ),
-        ),
-        )
-      );
+        );
   }
 }
